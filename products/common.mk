@@ -35,9 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
-# lithiummod specific product packages
-PRODUCT_PACKAGES += Superuser \
-
 # Common lithiummod overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lithiummod/overlay/common
 
