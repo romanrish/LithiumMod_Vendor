@@ -66,12 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/lithiummod/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh \
     vendor/lithiummod/prebuilt/common/xbin/powertop:system/xbin/powertop \ 
 
-#    vendor/lithiummod/prebuilt/common/xbin/su:system/xbin/su
-#    vendor/lithiummod/prebuilt/common/usr/share/app_store/coming_soon:system/usr/share/app_store/coming_soon \
- 
-# PRODUCT_COPY_FILES +=  \
-#    vendor/lithiummod/proprietary/RomManager.apk:system/app/RomManager.apk \
-
 # Always run in insecure mode, enables root on user build variants
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
