@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+mount -o remount,ro -t yaffs2 /dev/block/mtdblock4 /system
+sync
+echo 'System Mounted Read Only'
