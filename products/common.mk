@@ -66,9 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/lithiummod/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh \
     vendor/lithiummod/prebuilt/common/xbin/powertop:system/xbin/powertop \ 
 
-# Always run in insecure mode, enables root on user build variants
-#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-
 PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=false
 
 PRODUCT_COPY_FILES += \
@@ -111,14 +108,6 @@ PRODUCT_COPY_FILES += \
     vendor/lithiummod/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
     vendor/lithiummod/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
     vendor/lithiummod/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
-    vendor/lithiummod/proprietary/SholesQuickOffice.apk:./system/app/SholesQuickOffice.apk \
-#    vendor/lithiummod/proprietary/wireless_tether_2_0_2.apk:./system/app/wireless_tether_2_0_2.apk \
-#    vendor/lithiummod/proprietary/ChromeToPhone.apk:./system/app/ChromeToPhone.apk \
-#    vendor/lithiummod/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
-#    vendor/lithiummod/proprietary/CorpCal.apk:./system/app/CorpCal.apk \
-#    vendor/lithiummod/proprietary/GoogleGoggles.apk:./system/app/GoogleGoggles.apk \
-#    vendor/lithiummod/proprietary/VVMStub.apk:./system/app/VVMStub.apk \
-#    vendor/lithiummod/proprietary/LatinImeGoogle.apk:./system/app/LatinImeGoogle.apk \
-
+    vendor/lithiummod/proprietary/SholesQuickOffice.apk:./system/app/SholesQuickOffice.apk 
 
 
