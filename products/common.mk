@@ -35,6 +35,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+# lithiummod specific product packages
+PRODUCT_PACKAGES += Superuser \
+
 # Common lithiummod overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lithiummod/overlay/common
 
@@ -64,7 +67,38 @@ PRODUCT_COPY_FILES += \
     vendor/lithiummod/prebuilt/common/xbin/lsof:system/xbin/lsof \
     vendor/lithiummod/prebuilt/common/xbin/nano:system/xbin/nano \
     vendor/lithiummod/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh \
-    vendor/lithiummod/prebuilt/common/xbin/powertop:system/xbin/powertop \ 
+    vendor/lithiummod/prebuilt/common/xbin/powertop:system/xbin/powertop \
+#    vendor/lithiummod/prebuilt/common/xbin/apps2sd:system/xbin/apps2sd \
+#    vendor/lithiummod/prebuilt/common/xbin/apps2sdnormal:system/xbin/apps2sdnormal \
+#    vendor/lithiummod/prebuilt/common/xbin/apps2sdoff:system/xbin/apps2sdoff \
+#    vendor/lithiummod/prebuilt/common/xbin/becomegod:system/xbin/becomegod \
+#    vendor/lithiummod/prebuilt/common/xbin/blockads:system/xbin/blockads \
+#    vendor/lithiummod/prebuilt/common/xbin/free50mb:system/xbin/free50mb \
+#    vendor/lithiummod/prebuilt/common/xbin/free75mb:system/xbin/free75mb \
+#    vendor/lithiummod/prebuilt/common/xbin/free100mb:system/xbin/free100mb \
+#    vendor/lithiummod/prebuilt/common/xbin/rmamazonmp3:system/xbin/rmamazonmp3 \
+#    vendor/lithiummod/prebuilt/common/xbin/rmbrowser:system/xbin/rmbrowser \
+#    vendor/lithiummod/prebuilt/common/xbin/rmcardock:system/xbin/rmcardock \
+#    vendor/lithiummod/prebuilt/common/xbin/rmcorpcal:system/xbin/rmcorpcal \
+#    vendor/lithiummod/prebuilt/common/xbin/rmdeskclock:system/xbin/rmdeskclock \
+#    vendor/lithiummod/prebuilt/common/xbin/rmemail:system/xbin/rmemail \
+#    vendor/lithiummod/prebuilt/common/xbin/rmfacebook:system/xbin/rmfacebook \
+#    vendor/lithiummod/prebuilt/common/xbin/rmlauncher2:system/xbin/rmlauncher2 \
+#    vendor/lithiummod/prebuilt/common/xbin/rmtalk:system/xbin/rmtalk \
+#    vendor/lithiummod/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
+#    vendor/lithiummod/prebuilt/common/xbin/unblockads:system/xbin/unblockads \
+#    vendor/lithiummod/prebuilt/common/xbin/viewchangelog:system/xbin/viewchangelog \
+#    vendor/lithiummod/prebuilt/common/xbin/hostsshow:system/xbin/hostsshow \
+#    vendor/lithiummod/prebuilt/common/xbin/hostsblock:system/xbin/hostsblock 
+
+#    vendor/lithiummod/prebuilt/common/xbin/su:system/xbin/su
+#    vendor/lithiummod/prebuilt/common/usr/share/app_store/coming_soon:system/usr/share/app_store/coming_soon \
+ 
+# PRODUCT_COPY_FILES +=  \
+#    vendor/lithiummod/proprietary/RomManager.apk:system/app/RomManager.apk \
+
+# Always run in insecure mode, enables root on user build variants
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=false
 
@@ -108,6 +142,14 @@ PRODUCT_COPY_FILES += \
     vendor/lithiummod/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
     vendor/lithiummod/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
     vendor/lithiummod/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
-    vendor/lithiummod/proprietary/SholesQuickOffice.apk:./system/app/SholesQuickOffice.apk 
+    vendor/lithiummod/proprietary/SholesQuickOffice.apk:./system/app/SholesQuickOffice.apk \
+#    vendor/lithiummod/proprietary/wireless_tether_2_0_2.apk:./system/app/wireless_tether_2_0_2.apk \
+#    vendor/lithiummod/proprietary/ChromeToPhone.apk:./system/app/ChromeToPhone.apk \
+#    vendor/lithiummod/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
+#    vendor/lithiummod/proprietary/CorpCal.apk:./system/app/CorpCal.apk \
+#    vendor/lithiummod/proprietary/GoogleGoggles.apk:./system/app/GoogleGoggles.apk \
+#    vendor/lithiummod/proprietary/VVMStub.apk:./system/app/VVMStub.apk \
+#    vendor/lithiummod/proprietary/LatinImeGoogle.apk:./system/app/LatinImeGoogle.apk \
+
 
 
